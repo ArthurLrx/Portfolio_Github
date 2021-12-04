@@ -1,15 +1,15 @@
 body
 {
-    background-color: white;
+    background-color: blue;
 }
 
 .titre
 {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: flex-start;
-    color: red;
-    background-color: white ;
+    color: blue;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -103,8 +103,8 @@ body
 }
 .card-title{
   padding: 15px;
-  width: 400px;
-  height: 5px;
+  /* width: 400px;
+  height: 5px; */
 }
 
 .card-body{
@@ -119,9 +119,10 @@ body
 
 .carousel-inner{
   position: relative;
-  width: 200px;
+  /* object-fit: contain; */
+  /* width: 200px;
   height: 500px;
-  padding: 100px;
+  padding: 100px; */
 }
 .carouselTop
 {
@@ -132,15 +133,22 @@ body
   margin-bottom: 50px; */
 } 
 
+
+/* Pour la taille des image du carousel ----------------------------------------------------------------*/
+.carousel-item
+{
+object-fit: scale-down;
+}
+/* -----------------------------------------------------------------------------------------------------*/
+
+
 /* #carouselExampleControls
 {
   max-width: 100%;
 }  */
 
 
-/* Lien likedin 
-------------------------------------------------------------------*/
-
+/* Lien likedin ----------------------------------------------------------------------------------------*/
 footer{
   align-items: flex-end;
 }
@@ -176,7 +184,7 @@ footer li:nth-child(1) i {
   color: blue;
 }
 
-/* --------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------------------------*/
 
 
 /**form.Contact 
@@ -194,9 +202,9 @@ footer li:nth-child(1) i {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color:black;
+  color: white;
   font-family: 'Roboto', sans-serif;
-  background-color: red; 
+  background-color: blue; 
 
 }
 
@@ -205,9 +213,9 @@ footer li:nth-child(1) i {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: black;
+  color: white;
   font-family: 'Roboto', sans-serif;
-  background-color: red;
+  background-color: blue;
 }
 
 .Description
@@ -215,13 +223,13 @@ footer li:nth-child(1) i {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: red;
+  color: blue;
 }
 ul
 {
   list-style-type: none;
   overflow: hidden;
-  background-color: red; 
+  background-color: blue; 
 }
 
 
@@ -443,7 +451,6 @@ main#carousel {
     align-items: baseline;
     align-content: stretch;
     flex-flow: row wrap;
-    background-color: red;
   }
 }
 
