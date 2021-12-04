@@ -1,6 +1,8 @@
+@charset "UTF-8";
+
 body
 {
-    background-color: blue;
+  background-image: url(./Images/Image_bleu.jpg);
 }
 
 .titre
@@ -8,8 +10,8 @@ body
     display: flex;
     justify-content: center !important;
     align-items: flex-start;
-    color: blue;
-    background-color: white;
+    color: white;
+    background-color: blue;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -181,7 +183,8 @@ footer li:hover{
 }
 
 footer li:nth-child(1) i {
-  color: blue;
+  /* color: blue; */
+  background-image: url(./Images/Image_bleu.jpg);
 }
 
 /* -----------------------------------------------------------------------------------------------------*/
@@ -204,7 +207,8 @@ footer li:nth-child(1) i {
   align-items: flex-start;
   color: white;
   font-family: 'Roboto', sans-serif;
-  background-color: blue; 
+  /* background-color:blue; */
+  background-image: url(./Images/Image_bleu.jpg);
 
 }
 
@@ -215,7 +219,8 @@ footer li:nth-child(1) i {
   align-items: flex-start;
   color: white;
   font-family: 'Roboto', sans-serif;
-  background-color: blue;
+  /* background-color: blue; */
+  background-image: url(./Images/Image_bleu.jpg);
 }
 
 .Description
@@ -223,18 +228,18 @@ footer li:nth-child(1) i {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: blue;
+  color: white;
 }
 ul
 {
   list-style-type: none;
   overflow: hidden;
-  background-color: blue; 
+  background-color: white;
 }
 
 
 ul p{
-  color: white;
+  color: blue;
   float: left;
 
 }
@@ -245,7 +250,7 @@ li{
 
 li a
 {
-  color: white;
+  color: blue;
   display:block;
   padding:14px 16px;
   text-decoration: none;
