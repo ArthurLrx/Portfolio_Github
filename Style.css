@@ -11,12 +11,12 @@ body
 
 .titre
 {
-    display: flex;
-    justify-content: center !important;
-    align-items: flex-start;
-    color: white;
-    background-color: blue;
-    font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center !important;
+  align-items: flex-start;
+  color: white;
+  background-color: blue;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
@@ -147,8 +147,16 @@ footer li:nth-child(1) i {
   align-items: flex-start;
   color: white;
   font-family: 'Roboto', sans-serif;
-  /* background-color: blue; */
   background-image: url(./Images/Image_bleu.jpg);
+}
+
+
+
+.center
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .Description
