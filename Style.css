@@ -5,6 +5,10 @@ body
   background-image: url(./Images/Image_bleu.jpg);
 }
 
+
+
+/* Titre----------------------------------------------------------------------------------------------------------------- */
+
 .titre
 {
     display: flex;
@@ -15,85 +19,56 @@ body
     font-family: 'Roboto', sans-serif;
 }
 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* Animation Titre------------------------------------------------------------------------------------------------------- */
+
 .titre:hover 
 {
 	-webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/* .Icone:hover
-{
-	-webkit-animation: scale-up-center 0.4s ;
-	animation: scale-up-center 0.4s ;
-} */
+/* ---------------------------------------------------------------------------------------------------------------------- */
 
-.Titre_Formation
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color:white;
-    background-color: green;
-    font-family: 'Roboto', sans-serif;
-}
 
-.Titre_Centre_d_interet
+
+
+/* Centrage de la photo------------------------------------------------------------------------------------------------- */
+
+#Photo
 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  color: white;
-  background-color: purple;
-  font-family: 'Roboto', sans-serif;
 }
 
-.Titre_Expérience
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    color: white;
-    background-color: orange;
-    font-family: 'Roboto', sans-serif;
-}
+/* -------------------------------------------------------------------------------------------------------------------- */
 
-#Photo
-{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
+
+
+
+/* Arrondissement de l'image------------------------------------------------------------------------------------------- */
 
 .imageronde
 {
   width: 150px;
-  height: 170px;
+  height: 155px;
   border: none;
   border-radius: 75px;
   -moz-border-radius:75px;
   -webkit-border-radius:75px;
 }
 
-#Photos_Projets1
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-}
+/* -------------------------------------------------------------------------------------------------------------------- */
 
-#Photos_Projets2
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-}
- 
+
+
+
+/* Card Projets-------------------------------------------------------------------------------------------------------- */
 
 .card{
   padding: 20%;
@@ -101,59 +76,14 @@ body
   height: 500px;
   align-items: center;
   text-align: center;
-
-}
-.card-title{
-  padding: 15px;
-  /* width: 400px;
-  height: 5px; */
 }
 
-.card-body{
-  padding: 15px;
-  width: 200px;
-}
-/* .card.photo{
-  padding: 50px;
-  width: 100px;
-  height: 100px;
-} */
-
-.carousel-inner{
-  position: relative;
-  /* object-fit: contain; */
-  /* width: 200px;
-  height: 500px;
-  padding: 100px; */
-}
-.carouselTop
-{
-  display:flex;
-  justify-content: center;
-  /* flex-flow: row nowrap; */
-  /* margin-top: 50px;
-  margin-bottom: 50px; */
-} 
+/* -------------------------------------------------------------------------------------------------------------------- */
 
 
-/* Pour la taille des image du carousel ----------------------------------------------------------------*/
-.carousel-item
-{
-object-fit: scale-down;
-}
-/* -----------------------------------------------------------------------------------------------------*/
 
 
-/* #carouselExampleControls
-{
-  max-width: 100%;
-}  */
-
-
-/* Lien likedin ----------------------------------------------------------------------------------------*/
-footer{
-  align-items: flex-end;
-}
+/* Centrage Lien linkedin et Facebook ----------------------------------------------------------------------------------*/
 
 footer ul
 {
@@ -162,7 +92,15 @@ footer ul
   /* background-color: blue; */
 }
 
-footer li{
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* Liens LinkedIn et Facbook ------------------------------------------------------------------------------------------ */
+
+footer li
+{
   margin: 20px;
   height: 70px;
   width: 70px;
@@ -187,18 +125,10 @@ footer li:nth-child(1) i {
   background-image: url(./Images/Image_bleu.jpg);
 }
 
-/* -----------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------------------------*/
 
 
-/**form.Contact 
-{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-}**/
+
 
 #Contact
 {
@@ -207,9 +137,7 @@ footer li:nth-child(1) i {
   align-items: flex-start;
   color: white;
   font-family: 'Roboto', sans-serif;
-  /* background-color:blue; */
   background-image: url(./Images/Image_bleu.jpg);
-
 }
 
 .Zone_Contact
@@ -268,101 +196,8 @@ li a
     font-family: 'Roboto', sans-serif;
 }**/
 
-/*  
-main#carousel {
-    grid-row: 1 / 2;
-    grid-column: 1 / 8;
-    width: 100vw;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transform-style: preserve-3d;
-    perspective: 300px;
-    --items: 5;
-    --middle: 3;
-    --position: 1;
-    pointer-events: none;
-  }
-  
-  div.item {
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    background-color: coral;
-    --r: calc(var(--position) - var(--offset));
-    --abs: max(calc(var(--r) * -1), var(--r));
-    transition: all 0.25s linear;
-    transform: rotateY(calc(-10deg * var(--r)))
-      translateX(calc(-300px * var(--r)));
-    z-index: calc((var(--position) - var(--abs)));
-    display: flex;
-    justify-content: center;
-  }
-  
-  div.item:nth-of-type(1) {
-    --offset: 1;
-    background-color: rgb(0, 89, 255);
-  }
-  div.item:nth-of-type(2) {
-    --offset: 2;
-    background-color: green;
-  }
-  div.item:nth-of-type(3) {
-    --offset: 3;
-    background-color: orange;
-  }
-  div.item:nth-of-type(4) {
-    --offset: 4;
-    background-color: purple;
-  }
-  div.item:nth-of-type(5) {
-    --offset: 5;
-    background-color: red;
-  }
-  
-  input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(1):checked ~ main#carousel {
-    --position: 1;
-  }
-  
-  input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(2):checked ~ main#carousel {
-    --position: 2;
-  }
-  
-  input:nth-of-type(3) {
-    grid-column: 4 /5;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(3):checked ~ main#carousel {
-    --position: 3;
-  }
-  
-  input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(4):checked ~ main#carousel {
-    --position: 4;
-  }
-  
-  input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-  }
-  input:nth-of-type(5):checked ~ main#carousel {
-    --position: 5;
-  }
 
-*/ 
+
 
   /* ----------------------------------------------
  * Generated by Animista on 2021-9-30 16:31:6
