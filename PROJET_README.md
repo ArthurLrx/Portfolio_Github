@@ -8,7 +8,6 @@ J'ai importer un lien "google font" pour y intégrer des styles de caractères d
 
 3ème étape :
 Dans la balise "body" j'ai créé :
-
 Une balise "div" dans laquelle j'ai introduit une "class" pour afficher le titre de ma page
 Une balise "div" dans laquelle j'ai introduit un "id" pour introduire 4 liens qui renvoie chacun à une zone de la page.
 Une balise "div" dans laquelle j'ai introduit un "id" pour introduire ma photo de profil. Photo que j'ai mise ronde grâce à la class="imageronde" que j'ai amélioré dans le CSS.
@@ -18,6 +17,6 @@ Une balise "div" dans laquelle j'ai introduit une "class" pour créer 6 card dan
 2 balises "div" dans lesquelles j'ai introduit un titre (contact) et une zone de contact. Dans la zone de contact, j'ai introduit la balise "form" dans la quelle j'ai créé 4 espaces d'écritures (prénom, nom, email et message). Un bouton (envoyer) a été installer pour que les informations personnelle puisse s'envoyer par mail.
 Une balise "div" dans laquelle j'ai introduit
 Une balise "footer" dans laquelle j'ai introduit mes 2 liens (LinkedIn et Facebook)
-4ème étape :
 
+4ème étape :
 Je ferme les balises "body" et "html".
