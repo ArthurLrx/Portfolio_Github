@@ -1,9 +1,17 @@
 @charset "UTF-8";
 
+
+
+
+/* Arrière plan ----------------------------------------------------------------------------------------------------------*/
+
 body
 {
   background-image: url(./Images/Image_bleu.jpg);
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
 
 
 
@@ -12,19 +20,14 @@ body
 .titre
 {
   display: flex;
-  justify-content: center !important;
+  justify-content: center;
   align-items: flex-start;
   color: white;
   background-color: blue;
-  font-family: 'Roboto', sans-serif;
+  font-family : 'Cinzel', cursive ;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-/* Animation Titre------------------------------------------------------------------------------------------------------- */
+/* Animation Titre ---------------------------- */
 
 .titre:hover 
 {
@@ -37,8 +40,9 @@ body
 
 
 
-/* Centrage de la photo------------------------------------------------------------------------------------------------- */
+/* Photo de profil ------------------------------------------------------------------------------------------------------------ */
 
+/* Centrage de la photo -----------------------*/
 #Photo
 {
   display: flex;
@@ -46,13 +50,7 @@ body
   align-items: flex-start;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-/* Arrondissement de l'image------------------------------------------------------------------------------------------- */
-
+/* Arrondissement de l'image------------------ */
 .imageronde
 {
   width: 150px;
@@ -76,6 +74,7 @@ body
   justify-content: center;
   align-items: flex-start;
   color: white;
+  font-weight: bold;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------------*/
@@ -83,7 +82,24 @@ body
 
 
 
-/* Card Projets-------------------------------------------------------------------------------------------------------- */
+
+/* Descriptions card projets --------------------------------------------------------------------------------------------------------- */
+
+.Cartes_Projets
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+/* Card Projets------------------------------------------------------------------------------------------------------------------------ */
 
 .card{
   padding: 20%;
@@ -98,54 +114,7 @@ body
 
 
 
-/* Centrage Lien linkedin et Facebook ----------------------------------------------------------------------------------*/
-
-footer ul
-{
-  display: flex;
-  justify-content: center;
-  /* background-color: blue; */
-}
-
-/* -------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-/* Liens LinkedIn et Facbook ------------------------------------------------------------------------------------------ */
-
-footer li
-{
-  margin: 20px;
-  height: 70px;
-  width: 70px;
-  border-radius: 150px;
-  background: linear-gradient(225deg, green, orange);
-  box-shadow: -5px 5px 9px white, 5px -5px 9px grey;
-  cursor: pointer;
-}
-
-footer i{
-  font-size: 1em;
-}
-
-footer li:hover{
-  border-radius: 150px;
-  background: indianred;
-  box-shadow: inset -5px 5px 9px wheat, inset 5px -5px 9px magenta;
-}
-
-footer li:nth-child(1) i {
-  /* color: blue; */
-  background-image: url(./Images/Image_bleu.jpg);
-}
-
-/* -------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-/* Centrage contact --------------------------------------------------------------------------------------------------*/
+/* Centrage du mot contact --------------------------------------------------------------------------------------------------*/
 
 #Contact
 {
@@ -155,9 +124,28 @@ footer li:nth-child(1) i {
   color: white;
   font-family: 'Roboto', sans-serif;
   background-image: url(./Images/Image_bleu.jpg);
+  font-weight: bold;
 }
 
-/* Centrage zone de contact */
+#Protection_des_données
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(./Images/Image_bleu.jpg);
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
+/* Zone de contact ------------------------------------------------------------------------------------------*/
+
+/* Centrage zone de contact ----------------------------------------*/
 .Zone_Contact
 {
   display: flex;
@@ -168,7 +156,7 @@ footer li:nth-child(1) i {
   background-image: url(./Images/Image_bleu.jpg);
 }
 
-/* Centrage de la zone de message */
+/* Centrage de la zone de message ----------------------------------*/
 .center
 {
   display: flex;
@@ -176,14 +164,37 @@ footer li:nth-child(1) i {
   align-items: flex-start;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
 
-/* Bande blanche des liens ----------------------------------------------------------------------------------------------*/
+/* Liens LinkedIn et Facebook -----------------------------------------------------------------------------------------------------------------------*/
 
-/* Bande blanche au niveau des liens */
+/* Centrage Liens linkedin et Facebook -----------------------------*/
+footer ul
+{
+  display: flex;
+  justify-content: center;
+}
+
+/* Forme et couleur des liens LinkedIn et Facebook ---------------- */
+footer li
+{
+  margin: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 29px;
+  background: #e0e0e0;
+  box-shadow:  19px 19px 38px #9b9b9b,
+             -19px -19px 38px #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Bande blanche au niveau des liens LinkedIn et Facebook ----------*/
 ul
 {
   list-style-type: none;
@@ -191,18 +202,7 @@ ul
   background-color: white;
 }
 
-/* Page de profile en bleu */
-ul p{
-  color: blue;
-  float: left;
-}
-
-/* Alignement des liens */
-li{
-  float: right;
-}
-
-/* Espace entre les liens */
+/* Couleurs des logos des liens ------------------------------------*/
 li a
 {
   color: blue;
@@ -211,47 +211,26 @@ li a
   text-decoration: none;
 }
 
-/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* Taille des logo -------------------------------------------------*/
+footer i
+{
+  font-size: 2em;
+}
+
+/* Effet d'arrière plan --------------------------------------------*/
+footer li:hover
+{
+  border-radius: 150px;
+  background: rgba(255, 255, 255, 0.568);
+  box-shadow: inset -5px 5px 9px rgb(0, 89, 255), inset 5px -5px 9px rgb(0, 195, 255);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------*/
 
 
 
 
-
-  /* ----------------------------------------------
- * Generated by Animista on 2021-9-30 16:31:6
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation text-pop-up-top
- * ----------------------------------------
- */
-
-
-
- /* @-webkit-keyframes text-pop-up-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: none;
-  }
-  100% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
-  }
-} */
-
-
-
-
+/* Animation du titre */
 
 @keyframes text-pop-up-top {
   0% {
@@ -273,45 +252,11 @@ li a
 
 
 
+/* Responsive --------------------------------------------------------------------------------------------------------*/
 
-/* ----------------------------------------------
- * Generated by Animista on 2021-9-30 16:54:44
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation scale-up-center
- * ----------------------------------------
- */
- /* @-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-} */
-
-/* @keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-} */
-
-
-@media all and (max-width:1200px)
+@media all and (max-width:1280px)
 {
-  #Centrage, #info_liens,#Nom,#Photo,.Description,#carouselExampleControls,.row row-cols-1 row-cols-md-2,.Contact,.Zone_Contact
+  .titre,.navbar navbar-expand-lg navbar-light bg-light,.Photo,.Description,#carouselExampleControls,.row row-cols-1 row-cols-md-2,.Contact,.Protection_des_données,.Zone_Contact
   {
     display: flex;
     justify-content: space-around;
@@ -320,6 +265,12 @@ li a
     flex-flow: row wrap;
   }
 }
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
 
 
 
